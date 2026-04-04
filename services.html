@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>All Computer Courses & IT Services in Ahmedabad | Durga ICE</title>
+  <meta name="description" content="Explore all computer courses at Durga ICE Ahmedabad – Tally, CCC, Web Design, Python, Java, Graphic Design, AutoCAD, AI & ML and more. Best IT training institute in Bapunagar, Ahmedabad."/>
+  <meta name="keywords" content="computer classes in Ahmedabad, best computer institute in Ahmedabad, tally course in Ahmedabad, graphic design course, web development course, python course, java course, computer classes in Bapunagar, IT training institute in Bapunagar, computer classes in Odhav, computer classes in Rakhiyal, computer classes near CTM, computer classes in Naroda Road, job oriented courses in Ahmedabad, affordable computer classes in Ahmedabad, best tally institute near me Ahmedabad"/>
+  <meta name="robots" content="index, follow"/>
+  <meta property="og:title" content="All Computer Courses & IT Services | Durga ICE Ahmedabad"/>
+  <meta property="og:description" content="Explore all computer courses at Durga ICE – Tally, CCC, Web Design, Python, Java, Graphic Design, AutoCAD and more. Best IT institute in Bapunagar, Ahmedabad."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://www.durgaicedu.com/services.html"/>
+  <link rel="canonical" href="https://www.durgaicedu.com/services.html"/>
+  <link rel="icon" type="image/png" href="assets/images/logo1.jpg.png"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <style>
+    .services-hero {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 50%, #1565c0 100%);
+      padding: 130px 20px 60px; text-align: center;
+    }
+    .services-hero h1 { font-size: 2.8rem; font-weight: 800; color: var(--white); margin-bottom: 12px; }
+    .services-hero h1 span { color: var(--accent-light); }
+    .services-hero p { color: rgba(255,255,255,0.85); font-size: 1rem; }
+
+    .services-section { padding: 70px 0; background: var(--bg); }
+    .services-section:nth-child(even) { background: var(--white); }
+
+    .cat-header {
+      display: flex; align-items: center; gap: 15px;
+      margin-bottom: 30px; padding-bottom: 15px;
+      border-bottom: 3px solid var(--accent);
+    }
+    .cat-icon {
+      width: 50px; height: 50px; border-radius: 12px;
+      background: var(--accent); color: var(--white);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem; flex-shrink: 0;
+    }
+    .cat-header h2 { font-size: 1.6rem; font-weight: 700; color: var(--text); }
+    .cat-header h2 span { color: var(--accent); }
+    .cat-header p { font-size: 0.88rem; color: var(--text-light); margin-top: 2px; }
+
+    .srv-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; }
+    .srv-card {
+      background: var(--white); border-radius: var(--radius);
+      padding: 24px 22px; box-shadow: var(--shadow);
+      transition: var(--transition); border-top: 4px solid transparent;
+      display: flex; flex-direction: column;
+    }
+    .services-section:nth-child(even) .srv-card { background: var(--bg); }
+    .srv-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); border-top-color: var(--accent); }
+    .srv-card-top { display: flex; align-items: center; gap: 14px; margin-bottom: 10px; }
+    .srv-card-icon {
+      width: 52px; height: 52px; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem; flex-shrink: 0;
+    }
+    .srv-card h4 { font-size: 1rem; font-weight: 700; color: var(--text); margin: 0; }
+    .srv-card > p { font-size: 0.83rem; color: var(--text-light); line-height: 1.6; margin-bottom: 12px; }
+    .srv-topics { list-style: none; padding: 0; margin: 0 0 14px; display: flex; flex-direction: column; gap: 5px; }
+    .srv-topics li { font-size: 0.78rem; color: var(--text-light); display: flex; align-items: center; gap: 7px; }
+    .srv-topics li i { color: var(--accent); font-size: 0.65rem; flex-shrink: 0; }
+    .srv-card-meta { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 15px; }
+    .srv-tag {
+      display: inline-flex; align-items: center; gap: 5px;
+      background: rgba(26,35,126,0.07); color: var(--primary);
+      padding: 3px 10px; border-radius: 50px; font-size: 0.72rem; font-weight: 600;
+    }
+    .srv-tag i { font-size: 0.65rem; }
+    .srv-enroll {
+      display: inline-flex; align-items: center; justify-content: center; gap: 7px;
+      background: var(--primary); color: var(--white);
+      padding: 10px 0; border-radius: 8px; font-size: 0.85rem;
+      font-weight: 600; transition: var(--transition); width: 100%;
+      text-decoration: none; margin-top: auto;
+    }
+    .srv-enroll:hover { background: var(--accent); transform: translateY(-2px); }
+
+    .it-services-section {
+      padding: 70px 0;
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    }
+    .it-services-section .cat-header h2 { color: var(--white); }
+    .it-services-section .cat-header p { color: rgba(255,255,255,0.7); }
+    .it-services-section .cat-icon { background: rgba(255,255,255,0.2); }
+    .it-srv-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 18px; }
+    .it-srv-card {
+      background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.2); border-radius: var(--radius);
+      padding: 22px 20px; text-align: center; color: var(--white);
+      transition: var(--transition);
+    }
+    .it-srv-card:hover { background: rgba(255,255,255,0.2); transform: translateY(-5px); }
+    .it-srv-card i { font-size: 1.8rem; color: var(--accent-light); margin-bottom: 10px; display: block; }
+    .it-srv-card h4 { font-size: 0.92rem; font-weight: 600; }
+
+    .enroll-bar {
+      background: var(--accent); padding: 40px 20px; text-align: center;
+    }
+    .enroll-bar h3 { font-size: 1.6rem; font-weight: 700; color: var(--white); margin-bottom: 15px; }
+    .enroll-bar p { color: rgba(255,255,255,0.9); margin-bottom: 20px; }
+
+    @media (max-width: 768px) {
+      .srv-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+      .srv-card { padding: 14px 12px; }
+      .srv-card-icon { width: 40px; height: 40px; font-size: 1.1rem; }
+      .srv-card h4 { font-size: 0.85rem; }
+      .srv-card > p { font-size: 0.75rem; margin-bottom: 8px; }
+      .srv-tag { font-size: 0.65rem; padding: 2px 7px; }
+      .srv-enroll { font-size: 0.78rem; padding: 8px 0; }
+      .it-srv-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+      .it-srv-card { padding: 16px 12px; }
+      .it-srv-card i { font-size: 1.4rem; }
+      .it-srv-card h4 { font-size: 0.82rem; }
+      .services-hero h1 { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.jpg.jpeg" alt="DICE Logo" class="logo-img"/>
+        <div class="logo-text">
+          <span class="logo-main">DURGA</span>
+          <span class="logo-sub">Institute of Computer Education</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li class="nav-dropdown">
+          <a href="services.html">Services <i class="fas fa-chevron-down" style="font-size:0.7rem;"></i></a>
+          <div class="dropdown-mega">
+            <div class="dropdown-col">
+              <h5>Computer Courses</h5>
+              <ul>
+                <li>Basic Computer</li><li>CCC</li><li>Tally Prime with GST</li>
+                <li>Advance Excel &amp; Word</li><li>Digital Finance (Banking)</li><li>DCA &amp; ADCA</li>
+              </ul>
+              <h5>Design Courses</h5>
+              <ul>
+                <li>Graphic Design</li><li>Video Editing</li><li>Animation Editing</li>
+                <li>CAD CAM</li><li>VMC Operator</li><li>Advance Canva &amp; Figma</li>
+              </ul>
+            </div>
+            <div class="dropdown-col">
+              <h5>IT &amp; Development</h5>
+              <ul>
+                <li>Frontend Developer</li><li>Full Web Development</li><li>Full Stack Development</li>
+                <li>Backend Development</li><li>Software Development</li><li>AI &amp; ML Development</li>
+                <li>Python Programming</li><li>Java Programming</li><li>C and C++</li><li>Database Management</li>
+              </ul>
+            </div>
+            <div class="dropdown-col">
+              <h5>Professional Courses</h5>
+              <ul>
+                <li>Data Analyst</li><li>Cyber Security</li><li>Textile Design</li>
+                <li>Power BI</li><li>Human Resource</li>
+              </ul>
+              <h5>Teacher Training</h5>
+              <ul>
+                <li>Tech Teaching Program</li><li>Faculty Development</li><li>Online Teaching Skills</li>
+              </ul>
+            </div>
+            <div class="dropdown-col">
+              <h5>IT Services</h5>
+              <ul class="no-bullet">
+                <li>Website Development</li><li>Logo Design</li><li>Template &amp; Design</li>
+                <li>Digital Marketing</li><li>Hosting &amp; Domain</li><li>WordPress Development</li>
+                <li>PHP Development</li><li>App Development</li><li>And Other Services</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <!-- <li><a href="index.html#courses">Courses</a></li> -->
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="services-hero">
+    <p class="hero-badge" style="display:inline-flex;margin-bottom:15px;"><i class="fas fa-star" style="color:#FFD700;"></i> &nbsp;All Courses & Services</p>
+    <h1>Our <span>Services</span> & Courses</h1>
+    <p>Explore all our computer courses, professional programs and IT services</p>
+  </div>
+
+  <!-- 1. COMPUTER COURSES -->
+  <section class="services-section">
+    <div class="container">
+      <div class="cat-header">
+        <div class="cat-icon"><i class="fas fa-desktop"></i></div>
+        <div>
+          <h2>Computer <span>Courses</span></h2>
+          <p>Foundation & essential computer skills for everyone</p>
+        </div>
+      </div>
+      <div class="srv-grid">
+        <div class="srv-card">
+          <div class="srv-card-top"><div class="srv-card-icon" style="background:#e0f7fa;"><i class="fas fa-laptop" style="color:#00BCD4;"></i></div><h4>Basic Computer</h4></div>
+          <p>Start your digital journey with computer fundamentals, MS Office basics, internet browsing, email usage and touch typing skills.</p>
+          <div class="srv-card-meta">
+            <span class="srv-tag"><i class="fas fa-clock"></i> 1 Month</span>
+            <span class="srv-tag"><i class="fas fa-certificate"></i> Certificate</span>
+          </div>
+          <a href="index.html#contact" class="srv-enroll"><i class="fas fa-paper-plane"></i> Enroll Now</a>
+        </div>
+        <div class="srv-card">
+          <div class="srv-card-top"><div class="srv-card-icon" style="background:#e8f4fd;"><i class="fas fa-certificate" style="color:#2196F3;"></i></div><h4>CCC</h4></div>
+          <p>NIELIT certified Course on Computer Concepts covering OS, MS Office, internet, e-governance and basic programming concepts.</p>
+          <div class="srv-card-meta">
+            <span class="srv-tag"><i class="fas fa-clock"></i> 3 Months</span>
+            <span class="srv-tag"><i class="fas fa-certificate"></i> NIELIT Certified</span>
+          </div>
+          <a href="index.html#contact" class="srv-enroll"><i class="fas fa-paper-plane"></i> Enroll Now</a>
+        </div>
+        <div class="srv-card">
+          <div class="srv-card-top"><div class="srv-card-icon" style="background:#fff3e0;"><i class="fas fa-calculator" style="color:#FF9800;"></i></div><h4>Tally Prime with GST</h4></div>
+          <p>Master complete accounting with Tally Prime — GST filing, inventory management, payroll processing, balance sheet and financial reports.</p>
+          <div class="srv-card-meta">
+            <span class="srv-tag"><i class="fas fa-clock"></i> 4 Months</span>
+            <span class="srv-tag"><i class="fas fa-certificate"></i> Certificate</span>
+          </div>
+          <a href="index.html#contact" class="srv-enroll"><i class="fas fa-paper-plane"></i> Enroll Now</a>
+        </div>
+        <div class="srv-card">
+          <div class="srv-card-top"><div class="srv-card-icon" style="background:#e8f5e9;"><i class="fas fa-file-excel" style="color:#4CAF50;"></i></div><h4>Advance Excel &amp; Word</h4></div>
+          <p>Learn advanced Excel formulas, VLOOKUP, pivot tables, macros and Word formatting for professional office productivity.</p>
+          <div class="srv-card-meta">
+            <span class="srv-tag"><i class="fas fa-clock"></i> 2 Months</span>
+            <span class="srv-tag"><i class="fas fa-certificate"></i> Certificate</span>
+          </div>
+          <a href="index.html#contact" class="srv-enroll"><i class="fas fa-paper-plane"></i> Enroll Now</a>
+        </div>
+        <div class="srv-card">
+          <div class="srv-card-top"><div class="srv-card-icon" style="background:#f3e5f5;"><i class="fas fa-university" style="color:#9C27B0;"></i></div><h4>Digital Finance (Banking)</h4></div>
+          <p>Understand online banking, UPI payments, digital wallets, net banking, financial planning and government digital payment systems.</p>
+          <div class="srv-card-meta">
+            <span class="srv-tag"><i class="fas fa-clock"></i> 2 Months</span>
+            <span class="srv-tag"><i class="fas fa-certificate"></i> Certificate</span>
+          </div>
+          <a href="index.html#contact" class="srv-enroll"><i class="fas fa-paper-plane"></i> Enroll Now</a>
+        </div>
+        <div class="srv-card">
+          <div class="srv-card-top"><div class="srv-card-icon" style="background:#fff8e1;"><i class="fas fa-database" style="color:#FFC107;"></i></div><h4>DCA &amp; ADCA</h4></div>
+          <p>Diploma and Advanced Diploma in Computer Applications covering MS Office, Tally, internet, programming basics and project work.</p>
+          <div class="srv-card-meta">
+            <span class="srv-tag"><i class="fas fa-clock"></i> 6-12 Months</span>
+            <span class="srv-tag"><i class="fas fa-graduation-cap"></i> Diploma</span>
+          </div>
+          <a href="index.html#contact" class="srv-enroll"><i class="fas fa-paper-plane"></i> Enroll Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. DESIGN COURSES -->
+  <section class="services-section">
+    <div class="container">
+      <div class="cat-header">
+        <div class="cat-icon"><i class="fas fa-paint-brush"></i></div>
+        <div>
+          <h2>Design <span>Courses</span></h2>
+          <p>Creative & visual design skills for modern professionals</p>
+        </div>
+      </div>
+      <div class="srv-grid">
+        <div class="srv-card">
+          <div class="srv-card-top"><div class="srv-card-icon" style="background:#fce4ec;"><i class="fas fa-palette" style="color:#E91E63;"></i></div><h4>Graphic Design</h4></div>
+          <p>Master CorelDraw, Photoshop and Illustrator to create logos, banners, brochures and stunning brand identity designs.</p>
+          <div class="srv-card-meta"><span class="srv-tag"><i class="fas fa-clock"></i> 3 Months</span><span class="srv-tag"><i class="fas fa-certificate"></i> Certificate</span></div>
+          <a href="index.html#contact" class="srv-enroll"><i class="fas fa-paper-plane"></i> Enroll Now</a>
+        </div>
+        <div class="srv-card">
+          <div class="srv-card-top"><div class="srv-card-icon" style="background:#ffebee;"><i class="fas fa-video" style="color:#F44336;"></i></div><h4>Video Editing</h4></div>
+          <p>Learn professional video editing using Premiere Pro and After Effects — cuts, transitions, color grading and motion graphics.</p>
+          <div class="srv-card-meta"><span class="srv-tag"><i class="fas fa-clock"></i> 3 Months</span><span class="srv-tag"><i class="fas fa-certificate"></i> Certificate</span></div>
+          <a href="index.html#contact" class="srv-enroll"><i class="fas fa-paper-plane"></i> Enroll Now</a>
+        </div>
+        <div class="srv-card">
+          <div class="srv-card-top"><div class="srv-card-icon" style="background:#ede7f6;"><i class="fas fa-film" style="color:#673AB7;"></i></div><h4>Animation Editing</h4></div>
+          <p>Create 2D/3D animations, motion graphics and visual effects for films, ads and social media using industry tools.</p>
+          <div class="srv-card-meta"><span class="srv-tag"><i class="fas fa-clock"></i> 4 Months</span><span class="srv-tag"><i class="fas fa-certificate"></i> Certificate</span></div>
+          <a href="index.html#contact" class="srv-enroll"><i class="fas fa-paper-plane"></i> Enroll Now</a>
+        </div>
+        <div class="srv-card">
+          <div class="srv-card-top"><div class="srv-card-icon" style="background:#e0f7fa;"><i class="fas fa-drafting-compass" style="color:#00BCD4;"></i></div><h4>CAD CAM</h4></div>
+          <p>Learn computer aided design and manufacturing for mechanical, civil and product engineering using AutoCAD and CAM tools.</p>
+          <div class="srv-card-meta"><span class="srv-tag"><i class="fas fa-clock"></i> 3 Months</span><span class="srv-tag"><i class="fas fa-certificate"></i> Certificate</span></div>
+          <a href="index.html#contact" class="srv-enroll"><i class="fas fa-paper-plane"></i> Enroll Now</a>
+        </div>
+        <div class="srv-card">
+          <div class="srv-card-top"><div class="srv-card-icon" style="background:#eceff1;"><i class="fas fa-cogs" style="color:#607D8B;"></i></div><h4>VMC Operator</h4></div>
+          <p>Hands-on training in CNC and VMC machine operation, G-code programming and precision manufacturing techniques.</p>
+          <div class="srv-card-meta"><span class="srv-tag"><i class="fas fa-clock"></i> 4 Months</span><span class="srv-tag"><i class="fas fa-certificate"></i> Certificate</span></div>
+          <a href="index.html#contact" class="srv-enroll"><i class="fas fa-paper-plane"></i> Enroll Now</a>
+        </div>
+        <div class="srv-card">
+          <div class="srv-card-top"><div class="srv-card-icon" style="background:#fbe9e7;"><i class="fas fa-vector-square" style="color:#FF5722;"></i></div><h4>Advance Canva &amp; Figma</h4></div>
+          <p>Design professional UI/UX prototypes, social media posts, presentations and brand kits using Canva and Figma.</p>
+          <div class="srv-card-meta"><span class="srv-tag"><i class="fas fa-clock"></i> 2 Months</span><span class="srv-tag"><i class="fas fa-certificate"></i> Certificate</span></div>
+          <a href="index.html#contact" class="srv-enroll"><i class="fas fa-paper-plane"></i> Enroll Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. IT & DEVELOPMENT -->
+  <section class="services-section">
+    <div class="container">
+      <div class="cat-header">
+        <div class="cat-icon"><i class="fas fa-code"></i></div>
+        <div>
+          <h2>IT & <span>Development</span> Courses</h2>
+          <p>Industry-ready programming & software development skills</p>
+        </div>
+      </div>
+      <div class="srv-grid">
+        <div class="srv-card">
+          <div class="srv-card-top"><div class="srv-card-icon" style="background:#e8f5e9;"><i class="fas fa-globe" style="color:#4CAF50;"></i></div><h4>Frontend Developer</h4></div>
+          <p>Build modern, responsive websites using HTML5, CSS3, JavaScript and React. Learn UI design, animations and cross-browser compatibility.</p>
+          <div class="srv-card-meta"><span class="srv-tag"><i class="fas fa-clock"></i> 4 Months</span><span class="srv-tag"><i class="fas fa-certificate"></i> Certificate</span></div>
+          <a href="index.html#contact" class="srv-enroll"><i class="fas fa-paper-plane"></i> Enroll Now</a>
+        </div>
+        <div class="srv-card">
+          <div class="srv-card-top"><div class="srv-card-icon" style="background:#e8f4fd;"><i class="fas fa-laptop-code" style="color:#2196F3;"></i></div><h4>Full Web Development</h4></div>
+          <p>Complete website development from scratch to live deployment — HTML, CSS, JS, backend integration, hosting and domain setup.</p>
+          <div class="srv-card-meta"><span class="srv-tag"><i class="fas fa-clock"></i> 6 Months</span><span class="srv-tag"><i class="fas fa-certificate"></i> Certificate</span></div>
+          <a href="index.html#contact" class="srv-enroll"><i class="fas fa-paper-plane"></i> Enroll Now</a>
+        </div>
+        <div class="srv-card">
+          <div class="srv-card-top"><div class="srv-card-icon" style="background:#f3e5f5;"><i class="fas fa-layer-group" style="color:#9C27B0;"></i></div><h4>Full Stack Development</h4></div>
+          <p>Master both frontend and backend development — React, Node.js, databases, REST APIs and complete web application development.</p>
+          <div class="srv-card-meta"><span class="srv-tag"><i class="fas fa-clock"></i> 8 Months</span><span class="srv-tag"><i class="fas fa-certificate"></i> Certificate</span></div>
+          <a href="index.html#contact" class="srv-enroll"><i class="fas fa-paper-plane"></i> Enroll Now</a>
+        </div>
+        <div class="srv-card">
+          <div class="srv-card-top"><div class="srv-card-icon" style="background:#fff3e0;"><i class="fas fa-server" style="color:#FF9800;"></i></div><h4>Backend Development</h4></div>
+          <p>Learn server-side programming with Node.js and PHP, build REST APIs, manage databases and deploy applications on cloud servers.</p>
+          <div class="srv-card-meta"><span class="srv-tag"><i class="fas fa-clock"></i> 4 Months</span><span class="srv-tag"><i class="fas fa-certificate"></i> Certificate</span></div>
+          <a href="index.html#contact" class="srv-enroll"><i class="fas fa-paper-plane"></i> Enroll Now</a>
+        </div>
+        <div class="srv-card">
+          <div class="srv-card-top"><div class="srv-card-icon" style="background:#e0f7fa;"><i class="fas fa-code-branch" style="color:#00BCD4;"></i></div><h4>Software Development</h4></div>
+          <p>Learn complete software engineering — SDLC, system design, coding best practices, testing and real-world project development.</p>
+          <div class="srv-card-meta"><span class="srv-tag"><i class="fas fa-clock"></i> 6 Months</span><span class="srv-tag"><i class="fas fa-certificate"></i> Certificate</span></div>
+          <a href="index.html#contact" class="srv-enroll"><i class="fas fa-paper-plane"></i> Enroll Now</a>
+        </div>
+        <div class="srv-card">
+          <div class="srv-card-top"><div class="srv-card-icon" style="background:#fce4ec;"><i class="fas fa-brain" style="color:#E91E63;"></i></div><h4>AI &amp; ML Development</h4></div>
+          <p>Explore artificial intelligence, machine learning algorithms, deep learning, neural networks and real-world AI project implementation.</p>
+          <div class="srv-card-meta"><span class="srv-tag"><i class="fas fa-clock"></i> 6 Months</span><span class="srv-tag"><i class="fas fa-certificate"></i> Certificate</span></div>
+          <a href="index.html#contact" class="srv-enroll"><i class="fas fa-paper-plane"></i> Enroll Now</a>
+        </div>
+        <div class="srv-card">
+          <div class="srv-card-top"><div class="srv-card-icon" style="background:#e3f2fd;"><i class="fab fa-python" style="color:#3776AB;"></i></div><h4>Python Programming</h4></div>
+          <p>From basics to advanced Python — data structures, OOP, file handling, automation scripts, web scraping and data science libraries.</p>
+          <div class="srv-card-meta"><span class="srv-tag"><i class="fas fa-clock"></i> 3 Months</span><span class="srv-tag"><i class="fas fa-certificate"></i> Certificate</span></div>
+          <a href="index.html#contact" class="srv-enroll"><i class="fas fa-paper-plane"></i> Enroll Now</a>
+        </div>
+        <div class="srv-card">
+          <div class="srv-card-top"><div class="srv-card-icon" style="background:#ffebee;"><i class="fab fa-java" style="color:#F44336;"></i></div><h4>Java Programming</h4></div>
+          <p>Learn Core Java, Object Oriented Programming, collections, exception handling, Spring Boot and enterprise-level application development.</p>
+          <div class="srv-card-meta"><span class="srv-tag"><i class="fas fa-clock"></i> 4 Months</span><span class="srv-tag"><i class="fas fa-certificate"></i> Certificate</span></div>
+          <a href="index.html#contact" class="srv-enroll"><i class="fas fa-paper-plane"></i> Enroll Now</a>
+        </div>
+        <div class="srv-card">
+          <div class="srv-card-top"><div class="srv-card-icon" style="background:#eceff1;"><i class="fas fa-terminal" style="color:#607D8B;"></i></div><h4>C and C++</h4></div>
+          <p>Build strong programming foundation with C and C++ — pointers, data structures, algorithms, memory management and problem solving.</p>
+          <div class="srv-card-meta"><span class="srv-tag"><i class="fas fa-clock"></i> 3 Months</span><span class="srv-tag"><i class="fas fa-certificate"></i> Certificate</span></div>
+          <a href="index.html#contact" class="srv-enroll"><i class="fas fa-paper-plane"></i> Enroll Now</a>
+        </div>
+        <div class="srv-card">
+          <div class="srv-card-top"><div class="srv-card-icon" style="background:#fff8e1;"><i class="fas fa-database" style="color:#FFC107;"></i></div><h4>Database Management</h4></div>
+          <p>Master MySQL and MongoDB — database design, SQL queries, joins, stored procedures, indexing and database administration skills.</p>
+          <div class="srv-card-meta"><span class="srv-tag"><i class="fas fa-clock"></i> 2 Months</span><span class="srv-tag"><i class="fas fa-certificate"></i> Certificate</span></div>
+          <a href="index.html#contact" class="srv-enroll"><i class="fas fa-paper-plane"></i> Enroll Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. PROFESSIONAL COURSES -->
+  <section class="services-section">
+    <div class="container">
+      <div class="cat-header">
+        <div class="cat-icon"><i class="fas fa-briefcase"></i></div>
+        <div>
+          <h2>Professional & <span>Career</span> Courses</h2>
+          <p>Job-oriented courses for career growth & advancement</p>
+        </div>
+      </div>
+      <div class="srv-grid">
+        <div class="srv-card">
+          <div class="srv-card-top"><div class="srv-card-icon" style="background:#e8f4fd;"><i class="fas fa-chart-bar" style="color:#2196F3;"></i></div><h4>Data Analyst</h4></div>
+          <p>Learn data analysis, visualization and reporting using Excel, Python, SQL and Power BI to make data-driven business decisions.</p>
+          <div class="srv-card-meta"><span class="srv-tag"><i class="fas fa-clock"></i> 4 Months</span><span class="srv-tag"><i class="fas fa-certificate"></i> Certificate</span></div>
+          <a href="index.html#contact" class="srv-enroll"><i class="fas fa-paper-plane"></i> Enroll Now</a>
+        </div>
+        <div class="srv-card">
+          <div class="srv-card-top"><div class="srv-card-icon" style="background:#ffebee;"><i class="fas fa-shield-alt" style="color:#F44336;"></i></div><h4>Cyber Security</h4></div>
+          <p>Learn ethical hacking, network security, penetration testing, cyber threats and how to protect systems from digital attacks.</p>
+          <div class="srv-card-meta"><span class="srv-tag"><i class="fas fa-clock"></i> 4 Months</span><span class="srv-tag"><i class="fas fa-certificate"></i> Certificate</span></div>
+          <a href="index.html#contact" class="srv-enroll"><i class="fas fa-paper-plane"></i> Enroll Now</a>
+        </div>
+        <div class="srv-card">
+          <div class="srv-card-top"><div class="srv-card-icon" style="background:#fce4ec;"><i class="fas fa-tshirt" style="color:#E91E63;"></i></div><h4>Textile Design</h4></div>
+          <p>Master fabric design, pattern making, textile technology and digital design tools used in the fashion and textile industry.</p>
+          <div class="srv-card-meta"><span class="srv-tag"><i class="fas fa-clock"></i> 3 Months</span><span class="srv-tag"><i class="fas fa-certificate"></i> Certificate</span></div>
+          <a href="index.html#contact" class="srv-enroll"><i class="fas fa-paper-plane"></i> Enroll Now</a>
+        </div>
+        <div class="srv-card">
+          <div class="srv-card-top"><div class="srv-card-icon" style="background:#fff3e0;"><i class="fas fa-chart-pie" style="color:#FF9800;"></i></div><h4>Power BI</h4></div>
+          <p>Create interactive dashboards, business reports and data visualizations using Microsoft Power BI for smart business intelligence.</p>
+          <div class="srv-card-meta"><span class="srv-tag"><i class="fas fa-clock"></i> 2 Months</span><span class="srv-tag"><i class="fas fa-certificate"></i> Certificate</span></div>
+          <a href="index.html#contact" class="srv-enroll"><i class="fas fa-paper-plane"></i> Enroll Now</a>
+        </div>
+        <div class="srv-card">
+          <div class="srv-card-top"><div class="srv-card-icon" style="background:#e8f5e9;"><i class="fas fa-users" style="color:#4CAF50;"></i></div><h4>Human Resource</h4></div>
+          <p>Learn HR management, recruitment process, payroll handling, labor laws, employee relations and modern HR software tools.</p>
+          <div class="srv-card-meta"><span class="srv-tag"><i class="fas fa-clock"></i> 3 Months</span><span class="srv-tag"><i class="fas fa-certificate"></i> Certificate</span></div>
+          <a href="index.html#contact" class="srv-enroll"><i class="fas fa-paper-plane"></i> Enroll Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. TEACHER TRAINING -->
+  <section class="services-section">
+    <div class="container">
+      <div class="cat-header">
+        <div class="cat-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+        <div>
+          <h2>Teacher <span>Training</span> Program</h2>
+          <p>Empowering educators with modern teaching skills</p>
+        </div>
+      </div>
+      <div class="srv-grid">
+        <div class="srv-card">
+          <div class="srv-card-top"><div class="srv-card-icon" style="background:#f3e5f5;"><i class="fas fa-chalkboard-teacher" style="color:#9C27B0;"></i></div><h4>Tech Teaching Program</h4></div>
+          <p>Become a certified computer teacher — learn teaching methodologies, classroom management, curriculum design and practical lab training.</p>
+          <div class="srv-card-meta"><span class="srv-tag"><i class="fas fa-clock"></i> 3 Months</span><span class="srv-tag"><i class="fas fa-certificate"></i> Certificate</span></div>
+          <a href="index.html#contact" class="srv-enroll"><i class="fas fa-paper-plane"></i> Enroll Now</a>
+        </div>
+        <div class="srv-card">
+          <div class="srv-card-top"><div class="srv-card-icon" style="background:#e8f4fd;"><i class="fas fa-user-graduate" style="color:#2196F3;"></i></div><h4>Faculty Development</h4></div>
+          <p>Upgrade your teaching skills with advanced pedagogy, curriculum development, assessment techniques and modern educational tools.</p>
+          <div class="srv-card-meta"><span class="srv-tag"><i class="fas fa-clock"></i> 2 Months</span><span class="srv-tag"><i class="fas fa-certificate"></i> Certificate</span></div>
+          <a href="index.html#contact" class="srv-enroll"><i class="fas fa-paper-plane"></i> Enroll Now</a>
+        </div>
+        <div class="srv-card">
+          <div class="srv-card-top"><div class="srv-card-icon" style="background:#e8f5e9;"><i class="fas fa-wifi" style="color:#4CAF50;"></i></div><h4>Online Teaching Skills</h4></div>
+          <p>Master digital classroom tools, LMS platforms, Zoom teaching, online course creation and student engagement strategies.</p>
+          <div class="srv-card-meta"><span class="srv-tag"><i class="fas fa-clock"></i> 2 Months</span><span class="srv-tag"><i class="fas fa-certificate"></i> Certificate</span></div>
+          <a href="index.html#contact" class="srv-enroll"><i class="fas fa-paper-plane"></i> Enroll Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. IT SERVICES -->
+  <section class="it-services-section">
+    <div class="container">
+      <div class="cat-header">
+        <div class="cat-icon"><i class="fas fa-globe"></i></div>
+        <div>
+          <h2 style="color:var(--white);">Our IT <span>Services</span></h2>
+          <p style="color:rgba(255,255,255,0.7);">Professional IT solutions for your business</p>
+        </div>
+      </div>
+      <div class="it-srv-grid">
+        <div class="it-srv-card"><i class="fas fa-laptop-code"></i><h4>Website Development</h4></div>
+        <div class="it-srv-card"><i class="fas fa-paint-brush"></i><h4>Logo Design</h4></div>
+        <div class="it-srv-card"><i class="fas fa-layer-group"></i><h4>Template & Design</h4></div>
+        <div class="it-srv-card"><i class="fas fa-bullhorn"></i><h4>Digital Marketing</h4></div>
+        <div class="it-srv-card"><i class="fas fa-server"></i><h4>Hosting & Domain</h4></div>
+        <div class="it-srv-card"><i class="fab fa-wordpress"></i><h4>WordPress Development</h4></div>
+        <div class="it-srv-card"><i class="fab fa-php"></i><h4>PHP Development</h4></div>
+        <div class="it-srv-card"><i class="fas fa-mobile-alt"></i><h4>App Development</h4></div>
+        <div class="it-srv-card"><i class="fas fa-cloud"></i><h4>Cloud Services</h4></div>
+        <div class="it-srv-card"><i class="fas fa-ellipsis-h"></i><h4>And Other Services</h4></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENROLL BAR -->
+  <div class="enroll-bar">
+    <h3>Ready to Start Your Learning Journey?</h3>
+    <p>Join 1000+ students who have transformed their careers with Durga ICE</p>
+    <a href="index.html#contact" class="btn btn-outline" onclick="event.preventDefault(); openPopup('General Enquiry');">Enroll Now &nbsp;<i class="fas fa-arrow-right"></i></a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="assets/images/footer logo.png" alt="DICE Logo" class="logo-img"/>
+            <div class="logo-text">
+              <!-- <span class="logo-main">DURGA ICE</span>
+              <span class="logo-sub">Institute of Computer Education</span> -->
+            </div>
+          </div>
+          <p>Empowering students with quality computer education since our establishment. Your success is our mission.</p>
+          <div class="social-links" style="margin-top:15px;">
+            <a href="https://www.facebook.com/durgaicedu" target="_blank" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/durgaicedu" target="_blank" class="social-btn"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@durgaicedu" target="_blank" class="social-btn"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.me/917990692566?text=Hello%20Durgaicedu" target="_blank" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+          </div>
+          <div style="display:flex; gap:10px; margin-top:15px; flex-wrap:wrap;">
+            <div style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); border-radius:8px; padding:8px 12px; display:flex; align-items:center; gap:8px;">
+              <i class="fab fa-google" style="font-size:1.3rem; color:#4285F4;"></i>
+              <div>
+                <div style="color:#fff; font-size:0.75rem; font-weight:700;">Google Reviews</div>
+                <div style="color:#FFD700; font-size:0.65rem;">★★★★★ 4.9/5</div>
+              </div>
+            </div>
+            <div style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); border-radius:8px; padding:8px 12px; display:flex; align-items:center; gap:8px;">
+              <i class="fas fa-trophy" style="font-size:1.3rem; color:#FFD700;"></i>
+              <div>
+                <div style="color:#fff; font-size:0.75rem; font-weight:700;">Best Institute</div>
+                <div style="color:rgba(255,255,255,0.6); font-size:0.65rem;">Award 2025</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="index.html#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+            <li><a href="index.html#gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+            <li><a href="index.html#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Our IT Services</h4>
+          <ul>
+            <li><a href="index.html#contact"><i class="fas fa-chevron-right"></i> Web Development</a></li>
+            <li><a href="index.html#contact"><i class="fas fa-chevron-right"></i> Logo Design</a></li>
+            <li><a href="index.html#contact"><i class="fas fa-chevron-right"></i> Digital Marketing</a></li>
+            <li><a href="index.html#contact"><i class="fas fa-chevron-right"></i> Hosting &amp; Domain</a></li>
+            <li><a href="index.html#contact"><i class="fas fa-chevron-right"></i> Cloud Services</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Our Courses</h4>
+          <ul>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Computer Courses</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Design Courses</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> IT & Development</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Professional Courses</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Teacher Training</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <p><i class="fas fa-map-marker-alt"></i> Shop No. F-14, Manhar Nagar, Nr. Krishna Vidhyalya, Bapunagar, Ahmedabad - 380024</p>
+          <p><i class="fas fa-phone-alt"></i> +91 79906 92566 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+91 70169 20258</p>
+          <p><i class="fas fa-envelope"></i> durgaicedu@gmail.com</p>
+          <p><i class="fas fa-globe"></i> www.durgaicedu.com</p>
+        </div>
+      </div>
+      <div style="text-align:center; padding:20px 0 10px; overflow:hidden;">
+        <p class="footer-anim-text">DURGA Institute of Computer Education</p>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Durga Institute of Computer Education. All Rights Reserved.</p>
+        <p>Designed with <i class="fas fa-heart" style="color:#e74c3c;"></i> for durgaicedu.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/917990692566?text=Hello%20Durgaicedu" target="_blank" style="position:fixed; left:20px; bottom:30px; z-index:9999; background:#25D366; color:#fff; width:55px; height:55px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1.8rem; box-shadow:0 4px 15px rgba(37,211,102,0.5); transition:all 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"><i class="fab fa-whatsapp"></i></a>
+
+  <!-- DEMO POPUP -->
+  <div id="demoPopup" class="popup-overlay">
+    <div class="popup-box">
+      <button class="popup-close" id="popupClose"><i class="fas fa-times"></i></button>
+      <div class="popup-badge"><i class="fas fa-gift"></i> Limited Offer</div>
+      <h3>Book Your <span>2-Day Free Demo</span></h3>
+      <p>Fill in your details and we'll call you to schedule your free demo class!</p>
+      <form id="demoForm">
+        <div class="popup-field">
+          <i class="fas fa-user"></i>
+          <input type="text" id="demoName" placeholder="Your Full Name" required/>
+        </div>
+        <div class="popup-field">
+          <i class="fas fa-phone"></i>
+          <input type="tel" id="demoPhone" placeholder="Mobile Number" pattern="[0-9]{10}" maxlength="10" required/>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full" id="demoBtn">
+          <span id="demoBtnText"><i class="fas fa-paper-plane"></i> Book Free Demo</span>
+          <span id="demoBtnLoad" style="display:none;"><i class="fas fa-spinner fa-spin"></i> Sending...</span>
+        </button>
+        <div id="demoMsg" class="form-message"></div>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz2-I3t2aWh5Tkd6cmgPaLG6VFxQJhBGpJA67lFJgnO6aC28EJABWwoNDKOvwMe0PXD/exec";
+
+    // Navbar scroll
+    const navbar = document.getElementById("navbar");
+    window.addEventListener("scroll", () => navbar.classList.toggle("scrolled", window.scrollY > 50));
+
+    // Hamburger
+    const hamburger = document.getElementById("hamburger");
+    const navLinks  = document.getElementById("navLinks");
+    hamburger.addEventListener("click", () => navLinks.classList.toggle("open"));
+    navLinks.querySelectorAll("a").forEach(l => l.addEventListener("click", () => navLinks.classList.remove("open")));
+
+    // Scroll top btn
+    const scrollTopBtn = document.createElement("button");
+    scrollTopBtn.className = "scroll-top";
+    scrollTopBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
+    document.body.appendChild(scrollTopBtn);
+    scrollTopBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+    window.addEventListener("scroll", () => scrollTopBtn.classList.toggle("show", window.scrollY > 300));
+
+    // Demo Popup
+    const demoPopup  = document.getElementById("demoPopup");
+    const popupClose = document.getElementById("popupClose");
+    const demoForm   = document.getElementById("demoForm");
+    const demoBtnText = document.getElementById("demoBtnText");
+    const demoBtnLoad = document.getElementById("demoBtnLoad");
+    const demoBtn    = document.getElementById("demoBtn");
+    const demoMsg    = document.getElementById("demoMsg");
+    let selectedCourse = "";
+
+    function openPopup(course) {
+      selectedCourse = course || "";
+      demoPopup.classList.add("active");
+    }
+    function closePopup() { demoPopup.classList.remove("active"); }
+
+    popupClose.addEventListener("click", closePopup);
+    demoPopup.addEventListener("click", (e) => { if (e.target === demoPopup) closePopup(); });
+
+    // Enroll buttons pe click se popup open
+    document.querySelectorAll(".srv-enroll").forEach(btn => {
+      btn.addEventListener("click", function(e) {
+        e.preventDefault();
+        const course = this.closest(".srv-card").querySelector("h4").textContent;
+        openPopup(course);
+      });
+    });
+
+    demoForm.addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name  = document.getElementById("demoName").value.trim();
+      const phone = document.getElementById("demoPhone").value.trim();
+
+      if (!/^[0-9]{10}$/.test(phone)) {
+        demoMsg.textContent = "⚠️ Please enter a valid 10-digit mobile number.";
+        demoMsg.className = "form-message error";
+        demoMsg.style.display = "block";
+        return;
+      }
+
+      demoBtnText.style.display = "none";
+      demoBtnLoad.style.display = "inline-flex";
+      demoBtn.disabled = true;
+
+      fetch(SCRIPT_URL, {
+        method: "POST",
+        body: JSON.stringify({
+          type: "Demo Booking – Services Page",
+          name, phone,
+          email: "Not provided",
+          course: selectedCourse || "2-Day Free Demo Request",
+          message: "Demo booking from Services page."
+        })
+      })
+      .then(r => r.json())
+      .then(() => {
+        demoMsg.textContent = "✅ Done! We'll call you soon.";
+        demoMsg.className = "form-message success";
+        demoMsg.style.display = "block";
+        setTimeout(closePopup, 2000);
+      })
+      .catch(() => {
+        demoMsg.textContent = "❌ Failed. Please call us directly.";
+        demoMsg.className = "form-message error";
+        demoMsg.style.display = "block";
+      })
+      .finally(() => {
+        demoBtnText.style.display = "inline-flex";
+        demoBtnLoad.style.display = "none";
+        demoBtn.disabled = false;
+      });
+    });
+  </script>
+</body>
+</html>
