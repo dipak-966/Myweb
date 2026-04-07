@@ -165,33 +165,68 @@ const track    = document.querySelector(".gallery-track");
 const prevBtn  = document.getElementById("galleryPrev");
 const nextBtn  = document.getElementById("galleryNext");
 const dotsWrap = document.getElementById("galleryDots");
-const perPage  = window.innerWidth <= 768 ? 1 : 3;
-const total    = document.querySelectorAll(".gallery-item").length;
-const pages    = Math.ceil(total / perPage);
+let perPage  = window.innerWidth <= 768 ? 1 : 2;
+let total    = document.querySelectorAll(".gallery-item").length;
+let pages    = Math.ceil(total / perPage);
 let current    = 0;
 
-for (let i = 0; i < pages; i++) {
-  const d = document.createElement("span");
-  d.className = "gallery-dot" + (i === 0 ? " active" : "");
-  d.addEventListener("click", () => goTo(i));
-  dotsWrap.appendChild(d);
+function buildDots() {
+  dotsWrap.innerHTML = '';
+  pages = Math.ceil(total / perPage);
+  for (let i = 0; i < pages; i++) {
+    const d = document.createElement("span");
+    d.className = "gallery-dot" + (i === 0 ? " active" : "");
+    d.addEventListener("click", () => goTo(i));
+    dotsWrap.appendChild(d);
+  }
 }
 
 function goTo(page) {
-  current = page;
+  current = (page + pages) % pages;
   const sliderWidth = track.parentElement.offsetWidth;
   const gap = 16;
-  const itemWidth = (sliderWidth - (perPage - 1) * gap) / perPage;
-  const moveBy = current * perPage * (itemWidth + gap);
-  track.style.transform = `translateX(-${moveBy}px)`;
+  const itemWidth = perPage === 1 ? sliderWidth : (sliderWidth - gap) / 2;
+  document.querySelectorAll(".gallery-item").forEach(item => {
+    item.style.minWidth = itemWidth + 'px';
+    item.style.maxWidth = itemWidth + 'px';
+  });
+  track.style.transform = `translateX(-${current * perPage * (itemWidth + gap)}px)`;
   document.querySelectorAll(".gallery-dot").forEach((d, i) =>
     d.classList.toggle("active", i === current)
   );
 }
 
-prevBtn.addEventListener("click", () => goTo((current - 1 + pages) % pages));
-nextBtn.addEventListener("click", () => goTo((current + 1) % pages));
-window.addEventListener("resize", () => goTo(current));
+buildDots();
+goTo(0);
+
+prevBtn.addEventListener("click", () => goTo(current - 1));
+nextBtn.addEventListener("click", () => goTo(current + 1));
+window.addEventListener("resize", () => {
+  perPage = window.innerWidth <= 768 ? 1 : 2;
+  buildDots();
+  goTo(0);
+});
+
+// Swipe support (touch + mouse drag)
+let touchStartX = 0;
+let mouseStartX = 0;
+let isDragging = false;
+
+track.addEventListener("touchstart", e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+track.addEventListener("touchend", e => {
+  const diff = touchStartX - e.changedTouches[0].clientX;
+  if (Math.abs(diff) > 50) diff > 0 ? goTo(current + 1) : goTo(current - 1);
+}, { passive: true });
+
+track.addEventListener("mousedown", e => { isDragging = true; mouseStartX = e.clientX; track.style.cursor = 'grabbing'; });
+window.addEventListener("mouseup", e => {
+  if (!isDragging) return;
+  isDragging = false;
+  track.style.cursor = 'grab';
+  const diff = mouseStartX - e.clientX;
+  if (Math.abs(diff) > 50) diff > 0 ? goTo(current + 1) : goTo(current - 1);
+});
+track.style.cursor = 'grab';
 
 // ===== WHY US SLIDER =====
 const whyCards = [
@@ -252,7 +287,21 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-// ===== COURSE ENROLL BUTTONS POPUP =====
+// ===== HERO CARD CLICK =====
+const heroCard = document.getElementById('heroCard');
+const heroInfo = document.getElementById('heroInfo');
+if (heroCard) {
+  heroCard.addEventListener('click', function() {
+    openPopup('General Enquiry');
+  });
+}
+const heroCloseBtn = heroInfo ? heroInfo.querySelector('button') : null;
+if (heroCloseBtn) {
+  heroCloseBtn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    heroInfo.classList.remove('active');
+  });
+}
 document.querySelectorAll(".course-btn").forEach(btn => {
   btn.addEventListener("click", function(e) {
     e.preventDefault();
